@@ -1,0 +1,107 @@
+/* All */
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.link-custom {
+  text-decoration: none;
+}
+
+.link-custom-1 {
+  color: black;
+}
+
+.bgimage {
+  float: right;
+  background-color: antiquewhite;
+  width: 50%;
+  height: 100vh;
+  background-image: url('../assets/Hero\ Image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .bgimage {
+    position: relative;
+    min-height: 100vh; 
+  } */
+
+/* .bgimage:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../assets/Hero\ Image.jpg') repeat 0 0;
+    z-index: -1;
+  } */
+
+li {
+  list-style-image: url(../assets/Checkmark.svg);
+}
+
+/* Halaman Home */
+
+.judul-Home {
+  background-color: antiquewhite;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+  background-image: url(../assets/SearchIcon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Halaman login */
+
+.bgimage1 {
+  background-color: antiquewhite;
+  height: 100vh;
+}
+
+.posisi-bgimage1 {
+  margin-top: 35vh;
+  padding: 0 0 0 40%;
+}
+
+.posisi-bgimage1 img {
+  float: left;
+  margin-right: 20px;
+}
+
+.posisi-bgimage1 p {
+  margin-top: -10px;
+}
+
+.test:after {
+  content: '';
+  position: absolute;
+  left: 60%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: antiquewhite;
+  z-index: -1;
+}
+
+.form-custom {
+  width: 90%;
+}
+
+.button-custom {
+  width: 100%;
+}
+
+/* Halaman Page */
+.border-custom img {
+}
