@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="chatboxcss.css" />
+    <link rel="stylesheet" href="isichat.css">
+  </head>
+  <body>
+    <img class="open-button" onclick="openForm()" src="../img/chat.gif" width="10px" alt="">
+    <div class="chat-popup" id="myForm">
+      <div  class="form-container">
+        <!-- <h1>Chat</h1>
+
+        <label for="msg"><b>Message</b></label> -->
+        <!-- <textarea placeholder="Type message.." name="msg" required></textarea> -->
+        <main class="page__main">
+          <div class="block--background">
+            <div class="chatbot__overview">
+              <ul class="chatlist">
+                <li class="bot__output bot__output--standard">Hey, I'm Navvy!</li>
+                <li class="bot__output bot__output--standard">I will guide you through Mees' portfolio!</li>
+                <li class="bot__output bot__output--standard">
+                  <span class="bot__output--second-sentence">You can ask me a bunch of things!</span>
+                  <ul>
+                    <li class="input__nested-list">Something <span class="bot__command">about</span> Mees</li>
+                    <li class="input__nested-list">Mees' <span class="bot__command">best work</span></li>
+                    <li class="input__nested-list">Maybe I could <span class="bot__command">help</span> (for more instructions)</li>
+                    <li class="input__nested-list">Type <span class="bot__command">commands</span> for a list of every command</li>
+                  </ul>
+                  You could also scroll down to see Mees' full portfolio
+                </li>
+              </ul>
+            </div>
+            <div class="chatbox-area">
+              <form action="" id="chatform">
+                  <textarea placeholder="Talk to me!" class="chatbox" name="chatbox" resize: "none" minlength="2"></textarea>
+                  <input class="submit-button" type="submit" value="send">
+              </form>
+            </div>
+                <div class="block--background"></div>
+      
+      </main>
+
+        <!-- <button type="submit" class="btn">Send</button> -->
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </div>
+    </div>
+
+    <script>
+      function openForm() {
+        document.getElementById('myForm').style.display = 'block';
+      }
+
+      function closeForm() {
+        document.getElementById('myForm').style.display = 'none';
+      }
+    </script>
+    <script src="isichat.js"></script>
+  </body>
+</html>

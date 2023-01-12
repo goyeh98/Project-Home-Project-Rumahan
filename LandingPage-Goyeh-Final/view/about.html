@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About GOYEH</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/cssabout.css" />
+    <link rel="stylesheet" href="../tester/chatboxcss.css">
+    <link rel="stylesheet" href="../tester/isichat.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+    <link rel="shortcut icon" href="../img/logo1.png" />
+  </head>
+  <body>
+    <div class="a">
+      <div class="bg1"></div>
+      <div class="bg2"></div>
+      <div class="bg3"></div>
+      <img class="e" src="../img/logo1.png" alt="" />
+
+      <div class="b">
+        <img class="foto" src="../img/kake.png" alt="" width="400" />
+        <div class="c">
+          <br><br>
+          <h2>
+            I'm Yoga, a Frontend Developer working <br />
+            remotely for help scout on their web product <br />
+            in Bogor, Indonesia
+          </h2>
+          <br />
+          <p style="color: white">
+            I've spent the past 4+ years working across different areas like; <br />
+            barista, production operator, warehouse, marketing, to my current <br />
+            role designing products for web platforms.
+          </p>
+          <br />
+          <p style="color: white">
+            These days my time is spent researching, designing, prototyping, <br />
+            and coding. out of the office you'll find me playing badminton, <br />
+            ride a bicycle, and petting all the good cats.
+          </p>
+          <div class="sosmed" style="margin-top:-6.6%;">
+            <ul>
+              <a href="https://www.linkedin.com/in/yogadwinugraha/" target="_blank" style="margin-left: 81.6%; top: -10%;"> <img class="im1" src="../img/linkedin.gif" width="30" /> </a>
+              <a href="https://twitter.com/goyeh90" target="_blank" style="margin-left: 18.8px"> <img src="../img/twitter.gif" width="30" /></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <ul style="list-style-type: none; position: absolute; right: 9.1%; top: 26.5vh; text-indent: 1.7px;">
+        <li><a href="../index.html" style="writing-mode: vertical-rl; text-decoration: none; margin-top: 10px; color: #e0dee0">Home</a></li>
+        <li><a href="about.html" style="writing-mode: vertical-rl; text-decoration: none; margin-top: 10px; color: #e0dee0">About</a></li>
+        <li><a href="project.html" style="writing-mode: vertical-rl; text-decoration: none; margin-top: 10px; color: #e0dee0">Project</a></li>
+        <li><a href="#" onclick="openForm()" style="writing-mode: vertical-rl; text-decoration: none; margin-top: 10px; color: #e0dee0">Contact</a></li>
+      </ul>
+      <img class="open-button" onclick="openForm()" src="../img/chatt.gif" width="10px" alt="">
+    <div class="chat-popup" id="myForm">
+      <div  class="form-container">
+        <!-- <h1>Chat</h1>
+
+        <label for="msg"><b>Message</b></label> -->
+        <!-- <textarea placeholder="Type message.." name="msg" required></textarea> -->
+        <main class="page__main">
+          <div class="block--background">
+            <div class="chatbot__overview">
+              <ul class="chatlist">
+                <li class="bot__output bot__output--standard">Hey, I'm Yoga!</li>
+                <li class="bot__output bot__output--standard">I will guide you through Yoga' portfolio!</li>
+                <li class="bot__output bot__output--standard">
+                  <span class="bot__output--second-sentence">You can ask me a bunch of things!</span>
+                  <ul>
+                    <li class="input__nested-list">Something <span class="bot__command">project</span> for me</li>
+                    <li class="input__nested-list">Yoga' <span class="bot__command">contact</span></li>
+                    <li class="input__nested-list">Maybe I could <span class="bot__command">help</span> (for more instructions)</li>
+                    <li class="input__nested-list">Type <span class="bot__command">commands</span> for a list of every command</li>
+                  </ul>
+                  You could also scroll down to see Yoga' full portfolio
+                </li>
+              </ul>
+            </div>
+            <div class="chatbox-area">
+              <form action="" id="chatform">
+                  <textarea placeholder="Talk to me!" class="chatbox" name="chatbox" resize: "none" minlength="2"></textarea>
+                  <input class="submit-button" type="submit" value="send">
+              </form>
+            </div>
+                <div class="block--background"></div>
+      
+      </main>
+
+        <!-- <button type="submit" class="btn">Send</button> -->
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </div>
+    </div>
+      <div class="g" style="color:#e0dee0; position:absolute; bottom: 0.5%; right: 8%;">
+        <h3><i><b>GOYEHID</b></i></h3>
+      </div>
+    </div>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../tester/isichat.js"></script>
+    <script>
+      function openForm() {
+        document.getElementById('myForm').style.display = 'block';
+      }
+
+      function closeForm() {
+        document.getElementById('myForm').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
