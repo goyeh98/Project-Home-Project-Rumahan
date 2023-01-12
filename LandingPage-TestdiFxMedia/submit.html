@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-warning">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img src="assets/logo.png" style="width: 60px; height: fit-content; margin-right: 25px" alt="" />
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Club Buzz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Membership</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wine & Dine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Facilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Banquet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">What's New</a>
+              </li>
+            </ul>
+            <!-- Search -->
+            <div class="search-container">
+              <div class="search-button" onclick="toggleSearch()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill-rule="evenodd" d="M10.25 2a8.25 8.25 0 105.28 14.59l5.69 5.69a.75.75 0 101.06-1.06l-5.69-5.69A8.25 8.25 0 0010.25 2zM3.5 10.25a6.75 6.75 0 1113.5 0 6.75 6.75 0 01-13.5 0z"></path>
+                </svg>
+              </div>
+              <input type="text" class="search-field" id="search-field" />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+      <div class="owl-carousel owl-theme">
+        <video class="item-banner vid" autoplay>
+          <source src="assets/stock-footage-brunette-woman-swimming-underwater-in-slow-motion.mp4" type="video/mp4" />
+        </video>
+        <video class="item-banner vid" autoplay>
+          <source src="assets/stock-footage-two-asian-boys-racing-with-their-father-in-a-pool.mp4" type="video/mp4" />
+        </video>
+        <img class="item-banner" src="assets/home-2.png" alt="" />
+        <img class="item-banner" src="assets/home-1.png" alt="" />
+      </div>
+
+      <div class="sec">
+        <div class="judul">
+          The Premiere Family Club <br />
+          <p style="font-size: 26px">Where people make the difference</p>
+        </div>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="container">
+        <ul class="nav nav-pills mb-3 fs-2 tab1" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active px-5" id="pills-feature-tab" data-bs-toggle="pill" data-bs-target="#pills-feature" type="button" role="tab" aria-controls="pills-feature" aria-selected="true">Featured</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link px-5 text-dark" id="pills-event-tab" data-bs-toggle="pill" data-bs-target="#pills-event" type="button" role="tab" aria-controls="pills-event" aria-selected="false">Events</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link px-5 text-dark" id="pills-publications-tab" data-bs-toggle="pill" data-bs-target="#pills-publications" type="button" role="tab" aria-controls="pills-publications" aria-selected="false">
+              Publication
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <!-- Content 1 -->
+          <div class="tab-pane fade show active" id="pills-feature" role="tabpanel" aria-labelledby="pills-feature-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="">
+                  <img src="assets/Asset1.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 style="font-size: 18px" class="card-title text-center mt-3">SALE OF ORDINARY MEMBERSHIP AT THE CLUB</h5>
+                    <hr />
+                    <p style="font-size: 14px" class="card-text text-center">
+                      Purchase of membership directly from <br />
+                      the club
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="">
+                  <img src="assets/Asset3.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 style="font-size: 18px" class="card-title text-center mt-3 card1">
+                      SOCIAL DANCE NIGHT <br />
+                      BLACK & WHITE NIGHT
+                    </h5>
+                    <hr />
+                    <p style="font-size: 14px" class="card-text text-center">
+                      Come out and dance to a live band <br />
+                      and have the time of your life.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="">
+                  <img src="assets/Asset4.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 style="font-size: 18px" class="card-title text-center mt-3">
+                      21ST SSC OPEN <br />
+                      INVITATIONAL MIDGET MEET 2015
+                    </h5>
+                    <hr />
+                    <p style="font-size: 14px" class="card-text text-center">
+                      12 & 13 SEPTEMBER <br />
+                      Venue : Competition Pool
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="">
+                  <img src="assets/Asset5.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 style="font-size: 18px" class="card-title text-center mt-3">
+                      ANNUAL 9-BALL <br />
+                      POOL COMPETITION
+                    </h5>
+                    <hr />
+                    <p style="font-size: 14px" class="card-text">
+                      Time : 7pm (weekdays) <br />
+                      Venue : Billiards Room (Bowling Centre)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="">
+                  <img src="assets/Asset6.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 style="font-size: 18px" class="card-title text-center mt-3">
+                      22ND TABLE TENNIS <br />
+                      OPEN CHAMPIONSHIP
+                    </h5>
+                    <hr />
+                    <p style="font-size: 14px" class="card-text text-center">
+                      Men's Singles / Doubles <br />
+                      Ladies' Singles / Doubles <br />
+                      Mixed Doubles
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="">
+                  <img src="assets/Asset7.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 style="font-size: 18px" class="card-title text-center mt-3">
+                      WEEKEND BAZAAR <br />
+                      EVERY SATURDAY
+                    </h5>
+                    <hr />
+                    <p style="font-size: 14px" class="card-text">
+                      Time : 10am to 10pm <br />
+                      Venue : The Atrium
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content 2 -->
+          <div class="tab-pane fade" id="pills-event" role="tabpanel" aria-labelledby="pills-event-tab" tabindex="0">TEST</div>
+          <!-- Content 3 -->
+          <div class="tab-pane fade" id="pills-publications" role="tabpanel" aria-labelledby="pills-publications-tab" tabindex="0">TEST</div>
+        </div>
+      </div>
+      <br /><br /><br />
+
+      <!-- Tab 2 -->
+
+      <div class="container">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item news" role="presentation">
+            <button class="nav-link active fs-2 px-5" id="pills-news-tab" data-bs-toggle="pill" data-bs-target="#pills-news" type="button" role="tab" aria-controls="pills-news" aria-selected="true">Upcoming News</button>
+          </li>
+          <li class="nav-item news" role="presentation">
+            <button class="nav-link fs-5 pt-3 pb-3 text-dark" id="pills-sale-tab" data-bs-toggle="pill" data-bs-target="#pills-sale" type="button" role="tab" aria-controls="pills-sale" aria-selected="false">
+              SALE OF ORDINARY MEMBERSHIP AT THE CLUB
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-news" role="tabpanel" aria-labelledby="pills-news-tab" tabindex="0">
+            <p>
+              We are pleased to inform you that Members can now use their Credit Cards to make purchases at the week-end Bazaar stalls. <span id="dots"></span
+              ><span id="more"> Eligendi praesentium, itaque sequi eos eveniet obcaecati ea veritatis asperiores animi ipsum. Laudantium odit quae sunt error necessitatibus consectetur ex! Rerum, eveniet.</span
+              ><a class="text-primary" onclick="myFunction()" id="myBtn">Read more</a>
+            </p>
+            <p>
+              Come out and dance to a live band and have the time of your life. Gentlemen, this a chance to wear your tuxedos, and ladies your little black dress that you have always wanted to wear. <span id="dots1"></span
+              ><span id="more1"> Aperiam nulla sit facere dolores quis placeat earum quibusdam voluptatum harum atque cupiditate facilis perferendis repudiandae provident ducimus numquam explicabo, vero modi.</span
+              ><a class="text-primary" onclick="myFunction1()" id="myBtn1">Read more</a>
+            </p>
+          </div>
+          <div class="tab-pane fade" id="pills-sale" role="tabpanel" aria-labelledby="pills-sale-tab" tabindex="0">...</div>
+        </div>
+      </div>
+      <br /><br /><br />
+
+      <!-- Footer -->
+      <footer class="bg-warning">
+        <div class="container footerhead pt-5">
+          <section class="footer-1 me-5">
+            <span>
+              <img class="me-3" style="width: 105px; height: fit-content; float: left" src="assets/logo.png" alt="" />
+              <p><b> 45 Tanjong Rhu Road Singapore 436899 </b></p>
+              <p>
+                <b>
+                  Tel : (65) 6342 3600 <br />
+                  Fax : (65) 6344 4476
+                </b>
+              </p>
+            </span>
+            <img style="width: 100%; height: 130px" src="assets/map.png" alt="" /><br />
+            <br />
+            <span>
+              <p>
+                <b>
+                  Email Newsletters <br />
+                  Subscribe to receive news in your inbox.</b
+                >
+              </p>
+              <form action="#">
+                <div class="mb-1">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp" />
+                </div>
+                <button type="button" class="btn btn-primary form-control text-start">SUBSCRIBE</button>
+              </form>
+            </span>
+          </section>
+          <section class="footer-2">
+            <span> <a href="#">Home</a> </span><br /><br />
+            <span>
+              <a href="#">About Us</a><br />
+              <a href="#">Brief History</a><br />
+              <a href="#">Club Milestones</a><br />
+              <a href="#">Swimming Milestones</a><br />
+              <a href="#">Management Committe & Club Management</a><br />
+              <a href="#">Club Directory</a> </span
+            ><br /><br />
+            <span> <a href="#">Club Buzz</a> </span><br /><br />
+            <span>
+              <a href="#">Facilities</a><br />
+              <a href="#">Sport</a><br />
+              <a href="#">General</a>
+            </span>
+          </section>
+          <section class="footer-3 me-5">
+            <span>
+              <a href="#">Membership</a><br />
+              <a href="#">Membership Schemes</a><br />
+              <a href="#">Reciprocal Schemes</a><br />
+              <a href="#">Golfing Membership</a><br />
+              <a href="#">Transfer Procdures & FAQ</a><br />
+              <a href="#">Find Out More</a> </span
+            ><br /><br />
+            <span> <a href="#">Banquet</a> </span><br /><br />
+            <span>
+              <a href="#">Photo Gallery</a><br />
+              <a href="#">Sport</a><br />
+              <a href="#">Swimming</a><br />
+              <a href="#">Social</a>
+            </span>
+          </section>
+          <section class="footer-4">
+            <span>
+              <a href="#">Wine And Dine</a><br />
+              <a href="#">Jakson Miller</a><br />
+              <a href="#">The Palms</a><br />
+              <a href="#">Jade Phoenix</a><br />
+              <a href="#">Cabana</a><br />
+              <a href="#">Le Petit Tressor</a><br />
+              <a href="#">The Delicatesen</a><br />
+              <a href="#">Fountain Bar</a><br />
+              <a href="#">D’Tanjong</a><br />
+              <a href="#">D’Sports</a><br />
+              <a href="#">D’Galaxy</a><br />
+              <a href="#">Straits of Malacca</a> </span
+            ><br /><br />
+            <span>
+              <a href="#">Photo Gallery</a><br />
+              <a href="#">Sport</a><br />
+              <a href="#">Swimming</a><br />
+              <a href="#">Social</a>
+            </span>
+          </section>
+        </div>
+        <br /><br /><br />
+        <section class="text-bg-dark text-center py-2"><p>© Copyright 2015. Singapore Swimming Club. All Rights Reserved</p></section>
+      </footer>
+    </header>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+    <!-- Custom Javascript -->
+    <script>
+      // Custom Search
+      function toggleSearch() {
+        var searchField = document.getElementById('search-field');
+        if (searchField.style.display === 'none') {
+          searchField.style.display = 'block';
+        } else {
+          searchField.style.display = 'none';
+        }
+      }
+
+      // Custom Banner
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+          items: 1,
+          loop: true,
+          nav: true,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          autoplayTimeout: 5000,
+          smartSpeed: 1500,
+          autoplayHoverPause: true,
+        });
+      });
+
+      // Custom Readmore 1
+      function myFunction() {
+        var dots = document.getElementById('dots');
+        var moreText = document.getElementById('more');
+        var btnText = document.getElementById('myBtn');
+
+        if (dots.style.display === 'none') {
+          dots.style.display = 'inline';
+          btnText.innerHTML = 'Read more';
+          moreText.style.display = 'none';
+        } else {
+          dots.style.display = 'none';
+          btnText.innerHTML = 'Read less';
+          moreText.style.display = 'inline';
+        }
+      }
+
+      // Custom Readmore 2
+      function myFunction1() {
+        var dots = document.getElementById('dots1');
+        var moreText = document.getElementById('more1');
+        var btnText = document.getElementById('myBtn1');
+
+        if (dots.style.display === 'none') {
+          dots.style.display = 'inline';
+          btnText.innerHTML = 'Read more';
+          moreText.style.display = 'none';
+        } else {
+          dots.style.display = 'none';
+          btnText.innerHTML = 'Read less';
+          moreText.style.display = 'inline';
+        }
+      }
+    </script>
+  </body>
+</html>
