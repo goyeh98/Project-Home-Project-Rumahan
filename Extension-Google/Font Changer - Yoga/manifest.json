@@ -1,0 +1,23 @@
+{
+    "manifest_version":2,
+    "name": "Font Change Project Flux - Yoga",
+    "description": "Font Changer",
+    "version": "1",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "page": "background.html"
+    },
+    "content_scripts": [{
+        "js": [ "lib/jquery/jquery-3.4.1.js", "inject.js" ],
+        "matches": ["https://*/*", "http://*/*"  ]
+    }],
+    "icons": {
+        "128": "img/icon-128.png",
+        "48": "img/icon-48.png",
+        "16": "img/icon-16.png"
+    },
+    "default_locale": "en",
+    "permissions": [ "fontSettings", "https://*/*", "http://*/*", "storage" ]
+}

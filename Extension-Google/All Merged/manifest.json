@@ -1,0 +1,64 @@
+{
+    "manifest_version": 2,
+    "name": "Identifier prototype",
+    "description": "Merged all Features",
+    "version": "1",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "page": "background.html"
+    },
+    "commands": {
+        "_execute_browser_action": {
+           "suggested_key": {
+              "chromeos": "Alt+E",
+              "linux": "Alt+E",
+              "mac": "Alt+E",
+              "windows": "Alt+E"
+           }
+        }
+     },
+    "content_scripts": [
+        {
+            "exclude_matches": [
+                "*://www.google.com/*"
+            ],
+            "matches": [
+                "*://*/*"
+            ],
+            "run_at": "document_start",
+            "all_frames": true,
+            "js": ["lazify.js"]
+        },
+        {
+            "matches":["<all_urls>"],
+            "run_at": "document_end",
+            "js":["remove.js"]
+        },
+        {
+            "matches": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "js": [
+                "lib/jquery/jquery-3.4.1.js",
+                "inject.js"
+            ]
+        }
+    ],
+    "icons": {
+        "128": "img/icon-128.png",
+        "48": "img/icon-48.png",
+        "16": "img/icon-16.png"
+    },
+    "default_locale": "en",
+    "permissions": [
+        "fontSettings",
+        "https://*/*",
+        "http://*/*",
+        "storage",
+        "activeTab",
+        "webRequest"
+    ]
+}
