@@ -1,0 +1,25 @@
+     * {
+            font-family: 'Lato', sans-serif;
+        }
+
+        body {
+            background-image: url(../img/background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            height: 100vh;
+        }
+
+        .nav-link {
+            margin-left: 20px;
+            color: #e16ab2;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background-color: transparent;
+            color: rgb(114, 112, 109);
+        }
+       
